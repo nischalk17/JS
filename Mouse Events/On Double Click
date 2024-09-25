@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double-Click Event</title>
+</head>
+<body>
+  <h1>Mouse Double-Click Event</h1>
+  <p id="output">Double-click anywhere to see the event details.</p>
+
+  <script>
+    // Function to display mouse double-click event
+    function displayDoubleClickEvent(event) {
+      const output = document.getElementById('output');
+      output.textContent = `Double-click at X: ${event.clientX}, Y: ${event.clientY}`;
+    }
+
+    // Add event listener for mouse double-click event
+    document.addEventListener('dblclick', displayDoubleClickEvent);
+  </script>
+</body>
+</html>
