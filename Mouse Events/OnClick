@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Event</title>
+</head>
+<body>
+  <h1>Mouse Click Event</h1>
+  <p id="output">Click anywhere to see the event details.</p>
+
+  <script>
+    // Function to display mouse click event
+    function displayEvent(event) {
+      const output = document.getElementById('output');
+      output.textContent = `Click at X: ${event.clientX}, Y: ${event.clientY}`;
+    }
+
+    // Add event listener for mouse click event
+    document.addEventListener('click', displayEvent);
+  </script>
+</body>
+</html>
 
