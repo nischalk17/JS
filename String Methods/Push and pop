@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The push() Method</h2>
+
+<p>The push() method appends a new element to an array:</p>
+
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.write("Fruts are:" + fruits);
+document.write("<br>");
+
+fruits.push("Kiwi");
+fruits.push("Strawberrry");
+document.write("New Fruts are:" + fruits);
+document.write("<br>");
+
+fruits.pop();
+document.write("New Fruts are:" + fruits);
+document.write("<br>");
+</script>
+
+</body>
+</html>
