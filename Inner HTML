@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The innerHTML Property</h2>
+
+<p id="demo" onclick="myFunction()">Click here to change this HTML content.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thanks for clicking";
+}
+</script>
+
+</body>
+</html> 
