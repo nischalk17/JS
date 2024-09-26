@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Up/Down Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <button id="slideUpButton">Slide Up (Hide)</button>
+    <button id="slideDownButton">Slide Down (Show)</button>
+    <p id="myParagraph">This is a paragraph that will slide up or down when the buttons are clicked.</p>
+
+    <script>
+        $(document).ready(function(){
+            // Slide up (hide) the paragraph when the "Slide Up" button is clicked
+            $("#slideUpButton").click(function(){
+                $("#myParagraph").slideUp();
+            });
+
+            // Slide down (show) the paragraph when the "Slide Down" button is clicked
+            $("#slideDownButton").click(function(){
+                $("#myParagraph").slideDown();
+            });
+        });
+    </script>
+
+</body>
+</html>
