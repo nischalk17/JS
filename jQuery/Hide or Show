@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Paragraph Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <button id="hideButton">Hide Paragraph</button>
+    <button id="showButton">Show Paragraph</button>
+    <p id="myParagraph">This is a paragraph that can be shown or hidden.</p>
+
+    <script>
+        $(document).ready(function(){
+            // Hide the paragraph when the "Hide" button is clicked
+            $("#hideButton").click(function(){
+                $("#myParagraph").hide();
+            });
+
+            // Show the paragraph when the "Show" button is clicked
+            $("#showButton").click(function(){
+                $("#myParagraph").show();
+            });
+        });
+    </script>
+
+</body>
+</html>
