@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>getElementById with Form Example</title>
 </head>
 <body>
+    <h1>Simple Form</h1>
+    
     <form>
-        Enter First Name: <input type="text" name="fname" id="fname"/><br>
-        <input type="button" value="Submit" onclick="displayFName()"/>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
     </form>
 
-    <script type="text/javascript">
-        function displayFName()
-        {
-            let fname=document.getElementById("fname").value;
-            alert("You have entered " + fname);
-        }
+    <script>
+        // Get the element with the id "email"
+        const emailInput = document.getElementById('email');
+
+        // Change the background color of the email input field
+        emailInput.style.backgroundColor = 'lightyellow';
     </script>
 </body>
 </html>
