@@ -1,0 +1,26 @@
+/*
+In jQuery, chaining refers to the practice of linking multiple method calls together in a single statement. 
+This is possible because most jQuery methods return the jQuery object itself, allowing you to call another method on the same set of elements. 
+Chaining is a concise and readable way to perform multiple actions on the same element(s) without repeatedly selecting them.
+*/
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chaining in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="box">See here for the demonstration of slide up and down</div>
+
+<script>
+$(document).ready(function() {
+    $(".box").slideUp(2000).slideDown(2000);
+});
+</script>
+
+</body>
+</html>
