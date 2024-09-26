@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Creating JavaScript Objects Using the new Keyword</h2>
+
+
+
+<script>
+// Create an Object
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+
+// Diplay Object Content
+document.write(person.firstName + " is " + person.age + " years old.");
+</script>
+
+</body>
+</html>
