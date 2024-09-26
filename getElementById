@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter First Name: <input type="text" name="fname" id="fname"/><br>
+        <input type="button" value="Submit" onclick="displayFName()"/>
+    </form>
+
+    <script type="text/javascript">
+        function displayFName()
+        {
+            let fname=document.getElementById("fname").value;
+            alert("You have entered " + fname);
+        }
+    </script>
+</body>
+</html>
