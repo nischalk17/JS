@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In/Out Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <button id="fadeOutButton">Fade Out (Hide)</button>
+    <button id="fadeInButton">Fade In (Show)</button>
+    <p id="myParagraph">This is a paragraph that will fade in or out when the buttons are clicked.</p>
+
+    <script>
+        $(document).ready(function(){
+            // Fade out (hide) the paragraph when the "Fade Out" button is clicked
+            $("#fadeOutButton").click(function(){
+                $("#myParagraph").fadeOut();
+            });
+
+            // Fade in (show) the paragraph when the "Fade In" button is clicked
+            $("#fadeInButton").click(function(){
+                $("#myParagraph").fadeIn();
+            });
+        });
+    </script>
+
+</body>
+</html>
