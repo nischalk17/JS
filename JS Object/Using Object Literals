@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JS Object Using an Object Literal</h2>
+
+
+
+<script>
+// Create an Object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Display Data from the Object:
+document.write(person.firstName + " is " + person.age + " years old. ");
+</script>
+
+</body>
+</html>
