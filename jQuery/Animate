@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>              //loads jQuery
+    <script>
+        $(document).ready(function(){                                                //ensures that the DOM is fully loaded before executing the script
+            $("#mydiv").animate({                                                    //selector and action
+                right: "300px"                                                       The argument { right: "300px" } means the animation will move the <div> 300px to the right
+            }, 3000);                                                                The 3000 argument defines the animation duration in milliseconds, which is 3 second in this case.
+        });
+    </script>
+</head>
+<body>
+    <div id="mydiv" 
+    style="position: absolute; 
+    background-color: #ccc; 
+    width: 100px; 
+    height: 100px;">
+    </div>
+</body>
+</html>
