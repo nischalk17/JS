@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search Catalog</title>
+</head>
+<body>
+    <form action="store_search.php" method="post">
+        <!-- Dropdown for search type -->
+        <label for="search_type">Search Type:</label>
+        <select name="search_type" id="search_type">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="year">Year</option>
+        </select><br><br>
+
+        <!-- Textbox for search keyword -->
+        <label for="keyword">Search Keyword:</label>
+        <input type="text" name="keyword" id="keyword" required><br><br>
+
+        <!-- Radio button for download type -->
+        <label>Downloadable:</label>
+        True <input type="radio" name="download" value="true" required>
+        False <input type="radio" name="download" value="false" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
