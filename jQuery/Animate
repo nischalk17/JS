@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Example</title>
+    <title>Animate Example</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>              //loads jQuery
     <script>
         $(document).ready(function(){                                                //ensures that the DOM is fully loaded before executing the script
