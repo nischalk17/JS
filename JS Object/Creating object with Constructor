@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Creating Object with constructor</h2>
+
+
+<script>
+function person(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  
+};
+
+// Creating a new object using the constructor function
+let person1 = new person("John", "Doe", 50 );
+let person2 = new person("John", "Cena", 55);
+document.write(person1.firstName + " " + person1.lastName); 
+document.write("<br>"); 
+document.write(person2.firstName + " " + person2.lastName + " is " + person2.age); 
+
+</script>
+</body>
+</html>
