@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 2079</title>
+</head>
+
+<body>
+    <h2>Please fill the following form</h2>    
+    
+    <form onsubmit="return validate()" name="myform">
+
+        <div class="input">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <br>
+
+        <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+
+        <div class="hobbies">
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="hobby1" value="sports" name="hobbies"> Sports<br>
+            <input type="checkbox" id="hobby2" value="music" name="hobbies"> Music<br>
+            <input type="checkbox" id="hobby3" value="drama" name="hobbies"> Drama<br>
+            <input type="checkbox" id="hobby4" value="reading" name="hobbies"> Reading<br>
+        </div>
+        <br>
+
+        <div class="input">
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+
+    </form>
+
+    <script>
+        function validate() {
+            let username = document.forms["myform"]["username"].value;
+            let password = document.forms["myform"]["password"].value;
+
+            // Validate checkboxes
+            let hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+
+            // Username validation
+            if (username === "") {
+                alert("Username must be filled");
+                return false;
+            }
+
+            // Password validation
+            if (password === "") {
+                alert("Password must be filled");
+                return false;
+            }
+
+            if (password.length < 5) {
+                alert("Password must be at least 5 characters long");
+                return false;
+            }
+
+            // At least one checkbox must be selected
+            if (hobbies.length === 0) {
+                alert("Please select at least one hobby");
+                return false;
+            }
+
+            // If validation passes
+            return true;
+        }
+    </script> 
+</body>
+</html>
